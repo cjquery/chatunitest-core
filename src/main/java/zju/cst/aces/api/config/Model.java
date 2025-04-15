@@ -53,6 +53,15 @@ public enum Model {
             .withPresencePenalty(0)
             .build()),
     // 添加更多模型
+    DEEP_SEEK("ep-20250313161023-wk5vz", new ModelConfig.Builder()
+            .withModelName("ep-20250313161023-wk5vz")
+            .withUrl(null)
+            .withContextLength(16385)
+            .withTemperature(0.5)
+            .withFrequencyPenalty(0)
+            .withPresencePenalty(0)
+            .build()),
+
     CODE_QWEN("codeqwen:v1.5-chat", new ModelConfig.Builder()
             .withModelName("codeqwen:v1.5-chat")
             .withUrl(null)

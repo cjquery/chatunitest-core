@@ -53,23 +53,47 @@ public enum Model {
             .withPresencePenalty(0)
             .build()),
     // 添加更多模型
-    DEEP_SEEK("ep-20250313161023-wk5vz", new ModelConfig.Builder()
-            .withModelName("ep-20250313161023-wk5vz")
+    DEEP_SEEK("ep-20250717150507-69p6h", new ModelConfig.Builder()
+            .withModelName("ep-20250717150507-69p6h")
             .withUrl(null)
             .withContextLength(16385)
             .withTemperature(0.5)
             .withFrequencyPenalty(0)
             .withPresencePenalty(0)
             .build()),
-
-    CODE_QWEN("codeqwen:v1.5-chat", new ModelConfig.Builder()
-            .withModelName("codeqwen:v1.5-chat")
+    DEEP_SEEK_14B("deepseek-r1:14b", new ModelConfig.Builder()
+            .withModelName("deepseek-r1:14b")
+            .withUrl(null)
+            .withContextLength(16385)
+            .withTemperature(0.5)
+            .withFrequencyPenalty(0)
+            .withPresencePenalty(0)
+            .build()),
+    DEEP_SEEK_32B("deepseek-r1:32b", new ModelConfig.Builder()
+            .withModelName("deepseek-r1:32b")
+            .withUrl(null)
+            .withContextLength(16385)
+            .withTemperature(0.5)
+            .withFrequencyPenalty(0)
+            .withPresencePenalty(0)
+            .build()),
+    CODE_QWEN("qwen3:32b", new ModelConfig.Builder()
+            .withModelName("qwen3:32b")
             .withUrl(null)
             .withContextLength(16385)
             .withTemperature(0.5)
             .withFrequencyPenalty(0)
             .withPresencePenalty(0)
             .build());
+
+ /*   CODE_QWEN("codeqwen:v1.5-chat", new ModelConfig.Builder()
+            .withModelName("codeqwen:v1.5-chat")
+            .withUrl(null)
+            .withContextLength(16385)
+            .withTemperature(0.5)
+            .withFrequencyPenalty(0)
+            .withPresencePenalty(0)
+            .build());*/
 
     private final String modelName;
     private final ModelConfig defaultConfig;
